@@ -1,1 +1,2 @@
-export default {};
+export * from './modules/asset';
+export * from './modules/manager';
