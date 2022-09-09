@@ -12,5 +12,9 @@ export class QuaAssetsEndpoint {
     this.baseUrl = opts.baseUrl;
     this.appInfo = opts.appInfo;
   }
+
+  get url(): string {
+    return this.baseUrl + this.appInfo.localResourceVersion;
+  }
   // TODO: build downloadable zip info based on endpoint info
 }
