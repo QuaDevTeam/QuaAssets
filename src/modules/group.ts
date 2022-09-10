@@ -5,8 +5,6 @@ export class QuaAssetGroup {
   private bundles: QuaAssetBundle[] = [];
   private bundleNameMap: Record<string, QuaAssetBundle> = {};
 
-  // TODO: each group should have a zip manager
-
   public constructor(name: string) {
     this.name = name;
   }

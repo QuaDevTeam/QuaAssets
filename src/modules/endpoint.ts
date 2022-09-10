@@ -8,13 +8,11 @@ export interface QuaAssetsEndpointOpts {
 export class QuaAssetsEndpoint {
   private baseUrl: string;
   private appInfo: QuaLocalAppInfo;
+
   public constructor(opts: QuaAssetsEndpointOpts) {
-    this.baseUrl = opts.baseUrl;
+    this.baseUrl = opts.baseUrl + opts.appInfo.localResourceVersion;
     this.appInfo = opts.appInfo;
   }
 
-  get url(): string {
-    return this.baseUrl + this.appInfo.localResourceVersion;
-  }
   // TODO: build downloadable zip info based on endpoint info
 }

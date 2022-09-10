@@ -5,5 +5,3 @@ export interface QuaLocalAppInfo {
   localAppVersion?: string;
   localResourceVersion?: string;
 }
-
-export const DEFAULT_CACHE_LIMIT = 10;
